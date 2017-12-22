@@ -116,7 +116,13 @@ img.project__images {
 }
 
 #about__section {
+  display: flex;
+  flex-flow: row wrap;
   margin-top: 90px;
+}
+
+#about__section h2 {
+  width: 100%;
 }
 
 #about__section h2:after {
@@ -127,47 +133,39 @@ img.project__images {
   margin-top: 10px;
 }
 
+.about__summary {
+  margin-right: 20px;
+  width: calc(100% - 30% - 20px);
+}
+.about__image {
+  width: 30%;
+  margin-left: auto;
+}
 .about__summary p {
   font-size: 1.2em;
   line-height: 40px;
-  width: 50%;
+  width: 85%;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media screen and (max-width: 900px) {
-  .about__summary p{
+  .about__summary p {
     font-size: 1em;
     line-height: 30px;
+    width: 100%;
   }
 }
 
-img.aaron {
-    width: 30%;
-    float: right;
-    position: relative;
-    top: -18em;
-    right: 5em;
-}
-
-@media screen and (max-width: 900px) {
-  img.aaron {
-    width: 45%;
-    float: right;
-    position: relative;
-    top: -26em;
-    right: 0em;
-}
-}
-
 @media screen and (max-width: 600px) {
-  img.aaron {
+  .about__summary, .about__image {
     width: 100%;
-    top: 0;
-    right: 0;
+    margin: 0;
+  }
 }
-.about__summary p {
-  width: 100%;
-}
-}
+
 
 /* Media Styles */
 

@@ -224,6 +224,10 @@ img {
   width: 100%;
 }
 
+#hann img:hover {
+  transition: 1000ms;
+}
+
 section.section {
     margin-top: 80px;
 }
@@ -364,15 +368,28 @@ section.section {
 }
 
 .footer__outer {
-  background: #F7F7F7;
-  padding: 2.5em;
+  background: #1A1D20;
+  padding: 5em;
   margin-top: 90px;
+  color: white;
+}
+
+.project__footer {
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 900px) {
   .footer__outer {
     margin-top: 30px;
+    padding: 4em;
   }
+  .project__footer {
+    margin-top: 0;
+  }
+}
+
+.footer__content {
+    margin-top: -1em;
 }
 
 .footer__content h3 {
@@ -386,7 +403,7 @@ section.section {
 }
 
 .social__icons {
-  color: #000;
+  color: #ffffff;
   font-size: 1.25rem;
   margin: 0 1rem;
   -webkit-transition: all 0.1s ease-in-out;
@@ -396,4 +413,53 @@ section.section {
 
 .social__item {
   display: inline-block;
+}
+
+#contact__section {
+  margin-top: 90px;
+}
+
+.contact__summary {
+  margin-top: 50px;
+}
+
+#contact__section h2:after {
+  display: block;
+  content: "";
+  border-top: 5px solid black;
+  width: 55px;
+  margin-top: 10px;
+}
+
+#contact__section .form {
+  background: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  font-size: .7777rem;
+  padding: 20px 21px;
+  height: auto;
+  box-shadow: none;
+  border: 2px solid black;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+
+.form {
+  display: block;
+  width: 100%;
+  height: 34px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+}
+
+#contact__section .form#message {
+    height: 15em;
+}
+
+.button--send {
+  margin-top: 30px;
+  background: black;
+  color: white;
 }

@@ -36,6 +36,7 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="animate.css">
   <link rel="stylesheet" href="font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 </head>
 
@@ -59,7 +60,7 @@
 <p class="main__subtitle animated fadeInLeftBig">Web Development for Freelance Photographer</p>
 
 <div class="main__section">
-  <img src="https://res.cloudinary.com/dr1tb11i2/image/upload/v1513876559/Screen_Shot_2017-12-17_at_00.50.02_gs1wjg.png" alt="">
+  <img src="https://res.cloudinary.com/dr1tb11i2/image/upload/v1513876559/Screen_Shot_2017-12-17_at_00.50.02_gs1wjg.png" id="hann" alt="">
 </div>
 
 <section class="section">
@@ -68,7 +69,7 @@
       <h2 class="work-headline">Project Overview</h2>
     </div>
     <div class="column__2 column lead">
-      <p>Immediate Theatre required a redesign of their existing site that is easy to navigate, showcase their purpose and appeal to many different user types.</p>
+      <p>Hannaymous based in Orlanda, Florida. Shooting for the likes of The Weeknd and Kanye West requried a bespoke website which was unique to any photography site ever before.</p>
     </div>
     </div>
 
@@ -77,7 +78,7 @@
       <h2 class="work-headline">Project Goals</h2>
     </div>
     <div class="column__2 column lead">
-      <p>Immediate Theatre required a redesign of their existing site that is easy to navigate, showcase their purpose and appeal to many different user types.</p>
+      <p>Unique and custom layout with features Immediate Theatre required a redesign of their existing site that is easy to navigate, showcase their purpose and appeal to many different user types.</p>
     </div>
     </div>
 
@@ -86,7 +87,7 @@
       <h2 class="work-headline">Outcome</h2>
     </div>
     <div class="column__2 column lead">
-      <p>Immediate Theatre required a redesign of their existing site that is easy to navigate, showcase their purpose and appeal to many different user types.</p>
+      <p>The outcome of the site was great, with a lot of traction in the first day hitting over 1000 visits within less than 24 hours. As the site continues to gain support, development will be improved to be even better along the way.</p>
       <a href="https://www.hannanymous.com" class="button button--hollow" target="_blank">Visit Website</a>
     </div>
     </div>
@@ -107,7 +108,7 @@
 </section>
 
 <footer>
-	<div class="footer__outer">
+	<div class="footer__outer project__footer">
 	<div class="footer__content container">
 		<h3>2017 Aaron Bains. All rights reserved.</h3>
 
@@ -141,6 +142,21 @@
 	</div>
 </footer>
 
+<script>
+$(document).ready(function()
+{
+		$("#hann").hover(
+				function()
+				{
+						$(this).attr("src", "https://media.giphy.com/media/3o751Z8XGW1iTPPP20/giphy.gif");
+				},
+				function()
+				{
+						$(this).attr("src", "https://res.cloudinary.com/dr1tb11i2/image/upload/v1513876559/Screen_Shot_2017-12-17_at_00.50.02_gs1wjg.png");
+				}
+		);
+});
+</script>
 
 </body>
 </html>

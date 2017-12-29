@@ -319,8 +319,13 @@ section.section {
     margin-top: 0em;
   }
   section.section {
-    margin-top: 30px;
+    margin-top: 0px;
+    padding: 1em;
 }
+  .section--primary {
+    margin-top: 30px!important;
+    padding: 5.55556rem 0!important;
+  }
 }
 
 .button {

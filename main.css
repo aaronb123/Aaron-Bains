@@ -45,6 +45,19 @@ ul li {
   padding: .7em;
 }
 
+@media screen and (max-width: 320px) {
+  ul li {
+    font-size: 0.9em!important;
+  }
+  .project-summary h1 {
+    font-size: 2.125em!important;
+}
+  .main___title span {
+    font-size: 13px!important;
+    margin-left: 1em!important;
+}
+}
+
 ul a {
   text-decoration: none;
   color: black;

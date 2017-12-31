@@ -163,30 +163,19 @@
 </footer>
 
 <script>
-        var message = $('#contactform').find('messafe').html();
-        var name = $('#contactform').find('name').html();
-        var email = $('#contactform').find('email').html();
-        var budget = $('#contactform').find('budget').html();
 
-        var message = '<h1>' + subject +  '</h1><br><br>' +
-                '<ul>'+
-                        '<li>'+
-                                        'Name: ' + name +
-                        '</li>' +
-                                        'Email: ' + email +
-                        '<li>'+
-                                        'Message: ' + message +
-                        '</li>' +
-                '</ul>';
-        $("#sendMessage").on("click", function() {
-        $.ajax({
-                url: "//formspree.io/info@aaronbains.co.uk",
-                method: "POST",
-                data: {message: message},
-                dataType: "json"
-        });
-        alert('Thanks for the email, we\'ll be in touch soon™!');
-        return false;
+var message = "";
+
+$("#sendMessage").on("click", function() {
+    message = $("#contactform").serialize();
+    $.ajax({
+        url: "//formspree.io/info@aaronbains.co.uk",
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    alert('Thanks for the email, I\'ll be in touch soon.');
+    return false;
 });
 </script>
 

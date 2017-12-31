@@ -123,8 +123,6 @@
 	<input type="text" name="budget" id="budget" class="form" placeholder="Your Budget" />
 	<textarea name="message" id="message" class="form textarea" required="required"  placeholder="Message*"></textarea>
 	<input type="submit" class="button button--send" id="sendMessage" value="Send">
-	<input type="text" name="_gotcha" style="display:none" />
-	<input type="hidden" name="_next" value="www.google.co.uk" />
 	</div>
 </div>
 
@@ -177,6 +175,7 @@ $("#sendMessage").on("click", function() {
         dataType: "json"
     });
     alert('Thanks for the email, I\'ll be in touch soon.');
+		if(result === "no_errors") location.href = "www.google.co.uk"
     return false;
 });
 </script>
